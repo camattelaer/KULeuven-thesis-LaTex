@@ -1,0 +1,155 @@
+%compilen met LUALATEX!
+\PassOptionsToPackage{strict}{changepage}
+\documentclass[11pt,twoside,a4paper]{memoir}%showframe
+\usepackage{luatex85}
+	\def\pgfsysdriver{pgfsys-pdftex.def}
+
+\input{memoir_config}
+
+%glossaries
+\input{assets/Abbreviations}
+
+%RED: d10732
+%BLUE: 2166ac 
+%TAN: d2b48c
+
+%\glossaries
+\makenoidxglossaries
+\setlength{\glsdescwidth}{0.7\linewidth}
+
+\AtBeginBibliography{\small}
+
+\counterwithout{footnote}{chapter}
+
+\begin{document}
+\renewcommand{\labelitemi}{{\color{Blue2}$\bullet$}}
+\global\hyphenpenalty=100000
+\strictpagecheck
+
+\frontmatter
+
+\pagestyle{empty}
+
+%\title
+%\input{title_page_2}
+
+\includepdf[fitpaper=true]{./assets/cover_clean.pdf}
+\cleardoublepage
+
+\includepdf{./assets/Frontpage_english.pdf}
+\cleardoublepage
+
+
+\includepdf{./assets/Frontpage_dutch.pdf}
+\cleardoublepage
+
+%copyright
+\input{assets/Copyright}
+\cleardoublepage
+
+%quotes
+\input{assets/Dedication}
+\cleardoublepage
+
+\pagenumbering{roman}
+\pagestyle{mynotruledpagestyle}
+%\pagestyle{plain}
+
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\input{./assets/Acknowledgements}
+
+\cleardoublepage
+
+\addtocontents{toc}{\vspace{-7.5pt}}
+\addcontentsline{toc}{chapter}{Summary}
+\input{./assets/Summary}
+
+\cleardoublepage
+
+\addtocontents{toc}{\vspace{-7.5pt}}
+\addcontentsline{toc}{chapter}{Samenvatting}
+\input{./assets/Samenvatting}
+
+\cleardoublepage
+
+\addtocontents{toc}{\vspace{-7.5pt}}
+\glsunsetall
+\tableofcontents
+\glsresetall
+
+\cleardoublepage
+%\printglossary[type=\acronymtype]%,title=Lijst van afkortingen
+\addtocontents{toc}{\vspace{-7.5pt}}
+%\glossarystyle{listgroup}
+\glsfindwidesttoplevelname
+\printnoidxglossary[style=alttree, type=\acronymtype,title={Abbreviations}]%style=long, 
+
+\cleardoublepage
+
+%\cleardoublepage
+%
+%\listoffigures
+%
+%\cleardoublepage
+%
+%\listoftables
+
+\mainmatter
+
+\pagestyle{myruledpagestyle}
+
+%%%%%%%%
+% CHAPTER 1
+%%%%%%%%
+
+\input{chapters/chapter01.tex}
+
+%%%%%%%%
+% CHAPTER 2
+%%%%%%%%
+\begin{refsection}[bib1.bib]
+\input{chapters/chapter02.tex}
+
+\clearpage
+{\SingleSpacing
+\printbibliography[title={References},heading=subbibliography]
+}
+\end{refsection}
+
+
+%%%%%%
+% APPENDIX
+%%%%%%
+\appendix
+
+\input{chapters/appendix01.tex}
+
+%%%%%%
+% LIST OF PUBLICATIONS
+%%%%%%
+\backmatter
+\pagestyle{mynotruledpagestyle}
+
+\chapter{List of publications}
+
+\begin{refsection}[MyCollection.bib]
+
+\nocite{*}
+\printbibliography[title={Peer-reviewed journal articles},heading=subbibliography]
+
+\end{refsection}
+
+
+\cleardoublepage
+
+%%%%%%
+% DECLARATIONS
+%%%%%%
+
+\begin{refsection}[MyCollection.bib]
+
+\input{assets/declarations.tex}
+	
+\end{refsection}
+
+\end{document}

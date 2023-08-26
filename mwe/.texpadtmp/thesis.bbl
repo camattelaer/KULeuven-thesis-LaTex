@@ -1,0 +1,668 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \datalist[entry]{none/global//global/global}
+    \entry{Dahm2008}{article}{}
+      \name{author}{1}{}{%
+        {{hash=10164f61c3c6c19268e9ce00f698c9bd}{%
+           family={Dahm},
+           familyi={D\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{10164f61c3c6c19268e9ce00f698c9bd}
+      \strng{fullhash}{10164f61c3c6c19268e9ce00f698c9bd}
+      \strng{bibnamehash}{10164f61c3c6c19268e9ce00f698c9bd}
+      \strng{authorbibnamehash}{10164f61c3c6c19268e9ce00f698c9bd}
+      \strng{authornamehash}{10164f61c3c6c19268e9ce00f698c9bd}
+      \strng{authorfullhash}{10164f61c3c6c19268e9ce00f698c9bd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hum. Genet.}
+      \field{number}{6}
+      \field{title}{{Discovering DNA: Friedrich Miescher and the early years of nucleic acid research}}
+      \field{volume}{122}
+      \field{year}{2008}
+      \field{pages}{565\bibrangedash 581}
+      \range{pages}{17}
+    \endentry
+    \entry{Sinden1994}{book}{}
+      \name{author}{1}{}{%
+        {{hash=255707c58eade8fc6c66d4d67fdfd1c4}{%
+           family={Sinden},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press, Inc}%
+      }
+      \strng{namehash}{255707c58eade8fc6c66d4d67fdfd1c4}
+      \strng{fullhash}{255707c58eade8fc6c66d4d67fdfd1c4}
+      \strng{bibnamehash}{255707c58eade8fc6c66d4d67fdfd1c4}
+      \strng{authorbibnamehash}{255707c58eade8fc6c66d4d67fdfd1c4}
+      \strng{authornamehash}{255707c58eade8fc6c66d4d67fdfd1c4}
+      \strng{authorfullhash}{255707c58eade8fc6c66d4d67fdfd1c4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{DNA structure and function}}
+      \field{year}{1994}
+      \field{pages}{398}
+      \range{pages}{1}
+    \endentry
+    \entry{Dirac1929}{article}{}
+      \name{author}{1}{}{%
+        {{hash=81a54cc24a20dffceb9c538a6df77483}{%
+           family={Dirac},
+           familyi={D\bibinitperiod},
+           given={P.\bibnamedelimi A.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{fullhash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{bibnamehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{authorbibnamehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{authornamehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{authorfullhash}{81a54cc24a20dffceb9c538a6df77483}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. Math. Phys. Eng. Sci.}
+      \field{number}{792}
+      \field{title}{{Quantum Mechanics of Many-Electron Systems}}
+      \field{volume}{123}
+      \field{year}{1929}
+      \field{pages}{714\bibrangedash 733}
+      \range{pages}{20}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{2}
+  \datalist[entry]{none/global//global/global}
+    \entry{Rihon2023}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4d1da1ca8fedc08e11b9654bdb03b3e2}{%
+           family={Rihon},
+           familyi={R\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0f8c67d76063e306c17be2be42422f33}{%
+           family={Montalvão},
+           familyi={M\bibinitperiod},
+           given={Rinaldo\bibnamedelima Wander},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=391c85300a358d81b7c2729347dcf89e}{%
+           family={Froeyen},
+           familyi={F\bibinitperiod},
+           given={Mathy},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1bf9baa98d70aedea77d52d6682a741d}{%
+           family={Pinheiro},
+           familyi={P\bibinitperiod},
+           given={Vitor\bibnamedelima Bernardes},
+           giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1b3d886b31e268723bb907eaa6d828e0}{%
+           family={Lescrinier},
+           familyi={L\bibinitperiod},
+           given={Eveline},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{84e1859f25b6f6b37c1d2cfca0678c77}
+      \strng{fullhash}{c09e091609462cfc959422dccc94d8bd}
+      \strng{bibnamehash}{c09e091609462cfc959422dccc94d8bd}
+      \strng{authorbibnamehash}{c09e091609462cfc959422dccc94d8bd}
+      \strng{authornamehash}{84e1859f25b6f6b37c1d2cfca0678c77}
+      \strng{authorfullhash}{c09e091609462cfc959422dccc94d8bd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{to be determined}
+      \field{title}{Ducque : The Mechanical Nucleic Acid Architect. Proposing the RNA :: Morpholino heteroduplex through an all-around in silico workflow.}
+      \field{year}{in preparation}
+      \true{nocite}
+    \endentry
+    \entry{Schofield2023}{article}{}
+      \name{author}{13}{}{%
+        {{hash=6454bd79ff8f6b9ba828319542a17df5}{%
+           family={Schofield},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7dc9dc81beee7fa3adcc35bf4073dccb}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Alexander\bibnamedelima I},
+           giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=4d1da1ca8fedc08e11b9654bdb03b3e2}{%
+           family={Rihon},
+           familyi={R\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6bca24ed7fa82a76ed8a07e568277e34}{%
+           family={Peña\bibnamedelima Martinez},
+           familyi={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Cristian\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ba280559136efe8ca98fb66292a47ca5}{%
+           family={Zinn},
+           familyi={Z\bibinitperiod},
+           given={Sacha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=05504cfba04d35d7e17ec0cfc9b48a78}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=61cda3ea49be64dd38713e49a97975ff}{%
+           family={Dhaliwal},
+           familyi={D\bibinitperiod},
+           given={Gurpreet},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0753a70dcda5d86346bec1569468aa0e}{%
+           family={Schepers},
+           familyi={S\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2cf5c79b79ff01c5a2133e9648d50c09}{%
+           family={Herdewijn},
+           familyi={H\bibinitperiod},
+           given={Piet},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1b3d886b31e268723bb907eaa6d828e0}{%
+           family={Lescrinier},
+           familyi={L\bibinitperiod},
+           given={Eveline},
+           giveni={E\bibinitperiod}}}%
+        {{hash=82770c9a4fc85f92aad8d996c6f78437}{%
+           family={Christ},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=912a23b5b11d196738508f8351104c07}{%
+           family={Holliger},
+           familyi={H\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press ({OUP})}%
+      }
+      \strng{namehash}{155124362abc57446944a2ad16e28a45}
+      \strng{fullhash}{cd238e78ac731ddccb0277c91e13e7d8}
+      \strng{bibnamehash}{cd238e78ac731ddccb0277c91e13e7d8}
+      \strng{authorbibnamehash}{cd238e78ac731ddccb0277c91e13e7d8}
+      \strng{authornamehash}{155124362abc57446944a2ad16e28a45}
+      \strng{authorfullhash}{cd238e78ac731ddccb0277c91e13e7d8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{7}
+      \field{title}{Characterization of an {HNA} aptamer suggests a non-canonical G-quadruplex motif}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/nar/gkad592
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/nar/gkad592
+      \endverb
+    \endentry
+    \entry{Mattelaer2021pucker}{article}{}
+      \name{author}{5}{}{%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=645dcff0ee46be436c89056092608681}{%
+           family={Mattelaer},
+           familyi={M\bibinitperiod},
+           given={Henri-Philippe},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=4d1da1ca8fedc08e11b9654bdb03b3e2}{%
+           family={Rihon},
+           familyi={R\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=19ee4020291b2911c7099ed41575cd2e}{%
+           family={Froeyen},
+           familyi={F\bibinitperiod},
+           given={Matheus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1b3d886b31e268723bb907eaa6d828e0}{%
+           family={Lescrinier},
+           familyi={L\bibinitperiod},
+           given={Eveline},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society ({ACS})}%
+      }
+      \strng{namehash}{3a1d81d47542badddc79ac5b161f0241}
+      \strng{fullhash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \strng{bibnamehash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \strng{authorbibnamehash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \strng{authornamehash}{3a1d81d47542badddc79ac5b161f0241}
+      \strng{authorfullhash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{month}{5}
+      \field{number}{6}
+      \field{title}{Efficient and Accurate Potential Energy Surfaces of Puckering in Sugar-Modified Nucleosides}
+      \field{volume}{17}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{3814\bibrangedash 3823}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.1c00270
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jctc.1c00270
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jctc.1c00270
+      \endverb
+    \endentry
+    \entry{Mattelaer2021dxyna}{article}{}
+      \name{author}{9}{}{%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=878d06e77babef1d932f19a059b5193a}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={Mohitosh},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce508d577adc7a2db6a52a136e53425f}{%
+           family={Smets},
+           familyi={S\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=57a69a255877bdeb590fb4259c0f6ed3}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={Munmun},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0753a70dcda5d86346bec1569468aa0e}{%
+           family={Schepers},
+           familyi={S\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=645dcff0ee46be436c89056092608681}{%
+           family={Mattelaer},
+           familyi={M\bibinitperiod},
+           given={Henri-Philippe},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=f447896f44cb96907d31458195f40848}{%
+           family={Rosemeyer},
+           familyi={R\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2cf5c79b79ff01c5a2133e9648d50c09}{%
+           family={Herdewijn},
+           familyi={H\bibinitperiod},
+           given={Piet},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1b3d886b31e268723bb907eaa6d828e0}{%
+           family={Lescrinier},
+           familyi={L\bibinitperiod},
+           given={Eveline},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{3a1d81d47542badddc79ac5b161f0241}
+      \strng{fullhash}{0a1050854b28094861854887edae46b9}
+      \strng{bibnamehash}{0a1050854b28094861854887edae46b9}
+      \strng{authorbibnamehash}{0a1050854b28094861854887edae46b9}
+      \strng{authornamehash}{3a1d81d47542badddc79ac5b161f0241}
+      \strng{authorfullhash}{0a1050854b28094861854887edae46b9}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{ChemBioChem}}
+      \field{month}{2}
+      \field{number}{9}
+      \field{title}{Stable Hairpin Structures Formed by Xylose-Based Nucleic Acids}
+      \field{volume}{22}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{1638\bibrangedash 1645}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1002/cbic.202000803
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/cbic.202000803
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/cbic.202000803
+      \endverb
+    \endentry
+    \entry{DeRuysscher2020}{article}{}
+      \name{author}{10}{}{%
+        {{hash=29cc019c947e71851627d3f4bd80f90a}{%
+           family={Ruysscher},
+           familyi={R\bibinitperiod},
+           given={Dries\bibnamedelima De},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=68c7f3cab7b23d4ab3601ef5aa1751c9}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Luping},
+           giveni={L\bibinitperiod}}}%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a4fe0ba2e3e7dda462774dccfb1b60be}{%
+           family={Nautiyal},
+           familyi={N\bibinitperiod},
+           given={Manesh},
+           giveni={M\bibinitperiod}}}%
+        {{hash=65d1d26ec86eccf9294efb392a49b98b}{%
+           family={Graef},
+           familyi={G\bibinitperiod},
+           given={Steff\bibnamedelima De},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4e2170858720dbb5cae33b41c600d1bc}{%
+           family={Rozenski},
+           familyi={R\bibinitperiod},
+           given={Jef},
+           giveni={J\bibinitperiod}}}%
+        {{hash=333aa3d9a65d0ca6c713f54563545920}{%
+           family={Strelkov},
+           familyi={S\bibinitperiod},
+           given={Sergei\bibnamedelima V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=1b3d886b31e268723bb907eaa6d828e0}{%
+           family={Lescrinier},
+           familyi={L\bibinitperiod},
+           given={Eveline},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9e84ef8fdaef1713f81529ebae7cdb2d}{%
+           family={Weeks},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=789c3197bb4de6b5a584fa8276a1bfdc}{%
+           family={Aerschot},
+           familyi={A\bibinitperiod},
+           given={Arthur\bibnamedelima Van},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{cb69bcf6a23a316012281d755aac075f}
+      \strng{fullhash}{48fa836cade20bf8bed32e11c0627ea4}
+      \strng{bibnamehash}{48fa836cade20bf8bed32e11c0627ea4}
+      \strng{authorbibnamehash}{48fa836cade20bf8bed32e11c0627ea4}
+      \strng{authornamehash}{cb69bcf6a23a316012281d755aac075f}
+      \strng{authorfullhash}{48fa836cade20bf8bed32e11c0627ea4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioorganic {\&} Medicinal Chemistry}
+      \field{month}{8}
+      \field{number}{15}
+      \field{title}{Phenyltriazole-functionalized sulfamate inhibitors targeting tyrosyl- or isoleucyl-{tRNA} synthetase}
+      \field{volume}{28}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{115580}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.bmc.2020.115580
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.bmc.2020.115580
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.bmc.2020.115580
+      \endverb
+    \endentry
+    \entry{Chen2019}{article}{}
+      \name{author}{10}{}{%
+        {{hash=0a27d714f6077b9631ee729c620c8a65}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jialin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b62d906f1944c862062ebe4d4cb6ce0f}{%
+           family={Smaardijk},
+           familyi={S\bibinitperiod},
+           given={Susanne},
+           giveni={S\bibinitperiod}}}%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2bdb41015fc2d5a8064ad1ae3fced794}{%
+           family={Pamula},
+           familyi={P\bibinitperiod},
+           given={Filip},
+           giveni={F\bibinitperiod}}}%
+        {{hash=63c0cd9c7e6137bbbc9d7d2c7133a511}{%
+           family={Vandecaetsbeek},
+           familyi={V\bibinitperiod},
+           given={Ilse},
+           giveni={I\bibinitperiod}}}%
+        {{hash=46a96e5d02cfa5875763ccf2031f6047}{%
+           family={Vanoevelen},
+           familyi={V\bibinitperiod},
+           given={Jo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=34a6af67d460610c086553339b527b7c}{%
+           family={Wuytack},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1b3d886b31e268723bb907eaa6d828e0}{%
+           family={Lescrinier},
+           familyi={L\bibinitperiod},
+           given={Eveline},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ff6bfc94c6c1591247f0744d3b2effd6}{%
+           family={Eggermont},
+           familyi={E\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c71d15712527cdc7a5ead71271147116}{%
+           family={Vangheluwe},
+           familyi={V\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{913b6add437f4ceeb626c389c105d1a7}
+      \strng{fullhash}{1d6729139ea03a9e3830446ac0461fd2}
+      \strng{bibnamehash}{1d6729139ea03a9e3830446ac0461fd2}
+      \strng{authorbibnamehash}{1d6729139ea03a9e3830446ac0461fd2}
+      \strng{authornamehash}{913b6add437f4ceeb626c389c105d1a7}
+      \strng{authorfullhash}{1d6729139ea03a9e3830446ac0461fd2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biological Chemistry}
+      \field{month}{5}
+      \field{number}{19}
+      \field{title}{An N-termina \ce{Ca^{2+}}-binding motif regulates the secretory pathway \ce{Ca^{2+}}/\ce{Mn^{2+}}-transport {ATPase} {SPCA}1}
+      \field{volume}{294}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{7878\bibrangedash 7891}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1074/jbc.ra118.006250
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1074/jbc.ra118.006250
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1074/jbc.ra118.006250
+      \endverb
+    \endentry
+    \entry{Mattelaer2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c9da8a4aef7a7388d96d230a6fd5dbe9}{%
+           family={Mattelaer},
+           familyi={M\bibinitperiod},
+           given={H.-P.},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=90fa69cc167fea3fa236028217ce6204}{%
+           family={Papastavrou},
+           familyi={P\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6679ee01bc2d8dc84cd9ee0b4b550993}{%
+           family={Dehaen},
+           familyi={D\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=4e4100a9be48884f23c9cb46578c7609}{%
+           family={Herdewijn},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry ({RSC})}%
+      }
+      \strng{namehash}{3a08691b37415595f4a25b3db8af8047}
+      \strng{fullhash}{1df5949c7445ba94f3e62737b168796a}
+      \strng{bibnamehash}{1df5949c7445ba94f3e62737b168796a}
+      \strng{authorbibnamehash}{1df5949c7445ba94f3e62737b168796a}
+      \strng{authornamehash}{3a08691b37415595f4a25b3db8af8047}
+      \strng{authorfullhash}{1df5949c7445ba94f3e62737b168796a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical Communications}
+      \field{number}{36}
+      \field{title}{Oligonucleotide promoted peptide bond formation using a {tRNA} mimicking approach}
+      \field{volume}{53}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{5013\bibrangedash 5016}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1039/c7cc00831g
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1039/c7cc00831g
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1039/c7cc00831g
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{3}
+  \datalist[entry]{none/global//global/global}
+    \entry{Mattelaer2021pucker}{article}{}
+      \name{author}{5}{}{%
+        {{hash=72cf3a43ce99eb4a92ab0dc1b57e2970}{%
+           family={\textbf{C.-A.\bibnamedelimi Mattelaer}},
+           familyi={C\bibinithyphendelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=645dcff0ee46be436c89056092608681}{%
+           family={Mattelaer},
+           familyi={M\bibinitperiod},
+           given={Henri-Philippe},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=4d1da1ca8fedc08e11b9654bdb03b3e2}{%
+           family={Rihon},
+           familyi={R\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=19ee4020291b2911c7099ed41575cd2e}{%
+           family={Froeyen},
+           familyi={F\bibinitperiod},
+           given={Matheus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1b3d886b31e268723bb907eaa6d828e0}{%
+           family={Lescrinier},
+           familyi={L\bibinitperiod},
+           given={Eveline},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society ({ACS})}%
+      }
+      \strng{namehash}{3a1d81d47542badddc79ac5b161f0241}
+      \strng{fullhash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \strng{bibnamehash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \strng{authorbibnamehash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \strng{authornamehash}{3a1d81d47542badddc79ac5b161f0241}
+      \strng{authorfullhash}{3be0fe113ab408a57fb77abebb9d71c5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{month}{5}
+      \field{number}{6}
+      \field{title}{Efficient and Accurate Potential Energy Surfaces of Puckering in Sugar-Modified Nucleosides}
+      \field{volume}{17}
+      \field{year}{2021}
+      \field{pages}{3814\bibrangedash 3823}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.1c00270
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jctc.1c00270
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jctc.1c00270
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

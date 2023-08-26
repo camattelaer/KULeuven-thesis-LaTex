@@ -1,0 +1,409 @@
+
+%%%%%%%%%%
+% VARIA
+%%%%%%%%%%
+\usepackage{mwe}
+\usepackage{adjustbox}
+\usepackage{pdfpages}\usepackage{ifoddpage}
+\usepackage{enumitem}
+
+\newcommand{\R}{\textsuperscript{\textregistered}}
+\newcommand{\HRule}[1]{{\color{Blue1}\rule{\textwidth}{#1}}}
+
+\newcommand{\pr}{$^\prime$}
+\newcommand*{\mydprime}{^{\prime\prime}\mkern-1.2mu}
+\newcommand{\dpr}{$\mydprime$}
+%%%%%%%%%%
+% PAGINA SETUP
+%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+
+\usepackage{xcolor}
+% KLEINERE MARGES
+\definecolor{BlueLogo1}{RGB}{82,189,236}
+\definecolor{BlueLogo2}{RGB}{0,64,122}
+\definecolor{Blue1}{RGB}{31,171,231}
+\definecolor{Blue2}{RGB}{29,141,176}
+\definecolor{Blue3}{RGB}{17,110,138}
+\colorlet{niceGray}{black!20}
+
+\usepackage[
+marginratio={4:6,5:7},
+textwidth=157.5mm, textheight=234mm,
+headheight=\baselineskip,
+footskip=1.2cm,
+bindingoffset=6mm
+]{geometry}
+
+\usepackage{lscape}
+
+%%%%%%%%%%%%%%
+% PAGINA LAY-OUT
+%%%%%%%%%%%%%%
+
+% the chapter style:
+\usepackage{xcoffins,xcolor}
+\NewCoffin\main
+\NewCoffin\titleline
+\NewCoffin\chapternumber
+
+\makechapterstyle{Bringhurst}{%
+  \renewcommand*\chapterheadstart{}
+  \renewcommand*\printchaptername{}
+  \renewcommand*\chapternamenum{}
+  \renewcommand*\afterchapternum{}
+  % numbered chapters:
+  \renewcommand*\printchapternum{%
+      \SetHorizontalCoffin\chapternumber{%
+     \sffamily\textcolor{Blue1}{\thechapter}%
+    }%
+    \ScaleCoffin\chapternumber{6}{6}%
+  }
+  % unnumbered chapters:
+  \renewcommand*\printchapternonum{\SetHorizontalCoffin\chapternumber{}}
+  \renewcommand*\printchaptertitle[1]{
+  	\SetVerticalCoffin\main{\textwidth}{
+  	\setSpacing{2}\memRTLraggedright{\color{Blue1}\huge\sffamily\MakeUppercase{\textls[75]{##1}}}
+  	}
+  }
+  \renewcommand*\afterchaptertitle{%
+    \vskip\onelineskip 
+    \SetHorizontalCoffin\titleline{}
+    \JoinCoffins\main[r,t]\chapternumber[l,t](\marginparsep,0pt)%
+    \TypesetCoffin\main
+    \vskip\onelineskip
+  }
+}
+
+
+\chapterstyle{Bringhurst}
+
+% sections and subsections:
+\setsecnumformat{\normalfont\sffamily\large \csname the#1\endcsname  \quad}
+
+% the section style:
+\newcommand\uppercasehead[1]{%
+  \noindent{\large\sffamily\scshape{\textls[50]{#1}}}}
+\setsecindent{0pt}
+\setsecheadstyle{\uppercasehead}
+
+% the subsection style:
+\newcommand\itshapehead[1]{\large\sffamily\itshape#1}
+\setsubsecheadstyle{\sffamily}
+\setsecnumdepth{subsection}
+
+% the subsubsection style:
+\setsubsubsecheadstyle{\color{Blue1}$\triangleright$\quad\sffamily}%\itshapehead
+
+%headers
+\makepagestyle{myruledpagestyle}
+\makeevenhead{myruledpagestyle}{\textcolor{black}{\leftmark}}{}{}%\thepage x x
+\makeoddhead{myruledpagestyle}{}{}{\textcolor{black}{\scshape\rightmark}}%x x \thepage
+\makeevenfoot{myruledpagestyle}{\thepage}{}{}%\theversion}
+\makeoddfoot{myruledpagestyle}{}{}{\thepage}%{\theversion
+\makeatletter
+\makepsmarks{myruledpagestyle}{
+  \def\chaptermark##1{\markboth{%
+        \ifnum \value{secnumdepth} > -1
+          \if@mainmatter
+           \chaptername\ \thechapter\quad%
+          \fi
+        \fi
+        ##1}{}}
+  \def\sectionmark##1{\markright{%
+        \ifnum \value{secnumdepth} > 0
+          \thesection \ \;%
+        \fi
+        ##1}}
+}
+\makeatother
+
+\newlength{\mylength}
+\setlength{\mylength}{\textwidth}%34.4pc (40) (42.4pc)
+\makerunningwidth{myruledpagestyle}{\mylength}
+\makeheadposition{myruledpagestyle}{}{}{}{}%{flushright}{flushleft}{flushright}{flushleft}
+\makeheadrule{myruledpagestyle}{\mylength}{0.25pt}
+\makeheadfootruleprefix{myruledpagestyle}{\color{Blue1}}
+
+\makepagestyle{mypagestyle}
+\makeoddfoot{mypagestyle}{}{}{\thepage}
+\makerunningwidth{mypagestyle}{\textwidth}%34.4pc
+\makeheadposition{myruledpagestyle}{flushright}{flushleft}{flushright}{flushleft}
+\aliaspagestyle{chapter}{mypagestyle}
+
+%headers - front/backmatter
+\makepagestyle{mynotruledpagestyle}
+%\makeevenhead{myruledpagestyle}{\textcolor{black}{\leftmark}}{}{}%\thepage x x
+%\makeoddhead{myruledpagestyle}{}{}{\textcolor{black}{\scshape\rightmark}}%x x \thepage
+\makeevenfoot{mynotruledpagestyle}{\thepage}{}{}%\theversion}
+\makeoddfoot{mynotruledpagestyle}{}{}{\thepage}%{\theversion
+%\makeatletter
+%\makepsmarks{myruledpagestyle}{
+%  \def\chaptermark##1{\markboth{%
+%        \ifnum \value{secnumdepth} > -1
+%          \if@mainmatter
+%           \chaptername\ \thechapter\quad%
+%          \fi
+%        \fi
+%        ##1}{}}
+%  \def\sectionmark##1{\markright{%
+%        \ifnum \value{secnumdepth} > 0
+%          \thesection \ \;%
+%        \fi
+%        ##1}}
+%}
+%\makeatother
+
+%%%%%%%%%%%%%%
+% LETTERTYPE
+%%%%%%%%%%%%%%
+
+\usepackage[dutch,main=english]{babel}
+\usepackage{lipsum}
+
+%\usepackage{libertine}
+
+\usepackage[no-math]{fontspec}
+\setmainfont[WordSpace=1.5]{Erewhon}
+\setsansfont{Source Sans Pro}
+\setmonofont{Source Code Pro}
+
+% we want to letterspace uppercased words and those in small caps, so:
+\usepackage{microtype}
+
+% spacing
+\OnehalfSpacing
+
+%%%%%%%%%%%%%%
+% MARGE INHOUD
+%%%%%%%%%%%%%%
+
+\usepackage{marginfix}
+
+%%%%%%%%%%%%%%
+% TOC
+%%%%%%%%%%%%%%
+\settocdepth{subsection}
+
+% aanpassen TOC aan nieuwe chapter/section heading
+\renewcommand{\cftchapterfont}{\color{Blue1}\sffamily\scshape}
+\renewcommand{\cftsectionfont}{\sffamily\scshape}  
+\renewcommand{\cftsubsectionfont}{\sffamily}  
+
+% aanpassen paginanummers
+\renewcommand{\cftchapterpagefont}{\normalfont\sffamily}
+\renewcommand{\cftsectionpagefont}{\normalfont\sffamily}
+\renewcommand{\cftsubsectionpagefont}{\normalfont\sffamily}
+
+%aanpassen nummers
+\renewcommand{\cftchapterpresnum}{\color{Blue1}\normalfont\sffamily}
+\renewcommand{\cftsectionpresnum}{\normalfont\sffamily}
+\renewcommand{\cftsubsectionpresnum}{\normalfont\sffamily}
+
+%aanpassen ruimte boven chapters
+\renewcommand{\cftbeforechapterskip}{10pt}
+
+%%%%%%%%%%%%%%%
+% BIBLIOGRAFIE
+%%%%%%%%%%%%%%%
+
+\usepackage[style=chem-angew,sorting=none,url=false,doi=false,isbn=false,eprint=false, maxbibnames=999]{biblatex}%nature, backend=biber
+ 
+ %%%%%%%%%%%%%%%
+ % CHEMISTRY
+ %%%%%%%%%%%%%%%
+
+\usepackage[version=3]{mhchem}    
+
+%%%%%%%%%%%%%%%%%
+% GRAPHICS/TABLES
+%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{threeparttable}
+\usepackage{nicematrix}
+\usepackage{longtable}
+\usepackage{colortbl}
+
+\usepackage{dcolumn}
+\makeatletter
+\newcolumntype{B}[3]{>{\boldmath\DC@{#1}{#2}{#3}}c<{\DC@end}}
+\makeatother
+
+\usepackage{wrapfig}
+\usepackage{booktabs}
+
+    \newcommand{\midsepremove}{\aboverulesep = 0mm \belowrulesep = 0mm}
+    \midsepremove
+    \newcommand{\midsepdefault}{\aboverulesep = 0.605mm \belowrulesep = 0.984mm}
+    \midsepdefault
+
+\usepackage{multicol}
+\usepackage{multirow}
+
+% GRAPHICS PATH
+\graphicspath{
+{./figures/}
+}
+
+
+\usepackage[skip=0pt]{caption}     
+\DeclareCaptionJustification{single}{\SingleSpacing}
+\captionsetup[figure]{format=plain,textfont={footnotesize},justification=single,labelfont={color={Blue1},sc,sf,small},labelsep=space,singlelinecheck=off}
+\captionsetup[table]{format=plain,font={footnotesize},labelfont={color={Blue1},sc,sf,small},justification=single,labelsep=space}
+\captionsetup[lstlisting]{format=plain,font={footnotesize},justification=single,labelfont={color={Blue1},sc,sf,small},labelsep=space,singlelinecheck=off}
+
+\usepackage{xparse}
+
+%%%%%%%
+% TYPESET CODE
+%%%%%%%
+\usepackage{listings}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstloadlanguages{Awk,Matlab,sh}
+
+\lstdefinestyle{plain}{
+ commentstyle=\color{dkgreen},
+ keywordstyle=\color{blue},
+ numberstyle=\tiny\color{gray},
+ stringstyle=\color{mauve},
+ basicstyle={\footnotesize\ttfamily}, 
+ breakatwhitespace=true,
+ breaklines=true,
+ captionpos=top,
+ keepspaces=true,
+ numbers=left,
+ numbersep=5pt,
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ tabsize=1,
+}
+
+\lstset{style=plain}
+
+\lstdefinelanguage{amber_inp}
+{
+  % list of keywords
+  morekeywords={
+  pmemd.MPI
+  pmemd
+  sander
+  sander.MPI
+  pmemd.cuda
+  },
+  sensitive=true, % keywords are not case-sensitive
+  morecomment=[l]{!}, % l is for line comment
+  morecomment=[s]{/*}{*/}, % s is for start and end delimiter
+  morestring=[b]" % defines that strings are enclosed in double quotes
+}
+
+%%%%
+% BLOCKQUOTE
+%%%%
+\usepackage{etoolbox}
+\usepackage{framed}
+\usepackage{tikz}
+
+% Make commands for the quotes
+\newcommand*{\openquote}
+   {\tikz[remember picture,overlay,xshift=-4ex,yshift=-2.5ex]
+   \node (OQ) {{\color{white}\fontsize{45}{45}\selectfont``}};\kern0pt}
+
+\newcommand*{\closequote}[1]
+  {\tikz[remember picture,overlay,xshift=4ex,yshift={#1}]
+   \node (CQ) {{\color{white}\fontsize{45}{45}\selectfont''}};}
+   
+% select a colour for the shading
+\colorlet{shadecolor}{Blue1!35}
+
+\newcommand*\shadedauthorformat{\emph} % define format for the author argument
+
+% Now a command to allow left, right and centre alignment of the author
+\newcommand*\authoralign[1]{%
+  \if#1l
+    \def\authorfill{}\def\quotefill{\hfill}
+  \else
+    \if#1r
+      \def\authorfill{\hfill}\def\quotefill{}
+    \else
+      \if#1c
+        \gdef\authorfill{\hfill}\def\quotefill{\hfill}
+      \else\typeout{Invalid option}
+      \fi
+    \fi
+  \fi}
+
+\usepackage{tcolorbox}
+  
+  % wrap everything in its own environment which takes one argument (author) and one optional argument
+% specifying the alignment [l, r or c]
+%
+\newenvironment{shadequote}[2][l]%
+{\authoralign{#1}
+\ifblank{#2}
+   {\def\shadequoteauthor{}\def\yshift{-2ex}\def\quotefill{\hfill}}
+   {\def\shadequoteauthor{\par\authorfill\shadedauthorformat{#2}}\def\yshift{2ex}}
+\begin{snugshade}\begin{quote}\openquote}
+{\shadequoteauthor\quotefill\closequote{\yshift}\end{quote}\end{snugshade}}
+
+
+%%%%%%%%%%%%%%%%%
+% UNITS
+%%%%%%%%%%%%%%%%%
+
+\usepackage[binary-units, per-mode=symbol, version-1-compatibility, group-minimum-digits=4,detect-all]{siunitx} 
+\sisetup{range-units=single,separate-uncertainty=true,multi-part-units=single}
+\DeclareSIUnit[number-unit-product = {\,}]\cal{cal}
+\DeclareSIUnit{\calorie}{cal}
+
+%%%%%%%%%%%%%%%%%
+% Maths
+%%%%%%%%%%%%%%%%%
+
+\usepackage{physics}
+\usepackage{unicode-math}
+\setmathfont{Erewhon Math}
+\usepackage{nicefrac}
+
+%fix bold math in list of acronyms 
+%TO DO: make this work
+\makeatletter
+\g@addto@macro\bfseries{\boldmath}
+\makeatother
+
+%%%%%%
+% HYPERREFERENCING
+%%%%%%
+%\renewcommand\AtEndPackage[2]{\def\temp{\AddToHook{package/after/#1}{#2}}\temp}
+\usepackage[hyperfootnotes=false,hidelinks]{hyperref}
+%\usepackage{memhfixc}
+
+%%%%%%%%%%%%%%%%%
+% CROSS-REFERENCING
+%%%%%%%%%%%%%%%%%
+
+\usepackage[dutch,english]{cleveref} %\cref; \Cref -> capital; \cref{1,2} -> multiple references %[noabbrev]
+\AtBeginDocument{
+	\crefname{subsubsection, subsection, section}{\S}{\S}
+	\crefname{equation}{Equation}{Equations}
+	\crefname{chapter}{Chapter}{Chapters}
+	\crefname{table}{Table}{Tables}
+	\crefname{figure}{Figure}{Figures}
+	\crefname{section}{\S}{\S}
+	\crefname{subsection}{\S}{\S}
+}	
+
+\creflabelformat{equation}{#2#1#3}
+
+%%%%%%%%%%
+% GLOSSARIES
+%%%%%%%%%%
+\usepackage[acronym,toc,nonumberlist,order=letter,nogroupskip,nopostdot,nonumberlist]{glossaries}
+%\usepackage{glossary-superragged}
+
+

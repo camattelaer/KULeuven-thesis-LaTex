@@ -1,0 +1,137 @@
+\chapter{Floats and other content}\label{aims:chap}
+
+The path for figures is added to \verb=memoir.config= so the file name is sufficient in the \verb=\includegraphics= statement. Additionally, formatting of float labels is also specified in the \verb=memoir.config= file.
+
+All figures I used in my dissertation were prepared in vector format, exported in \verb=.pdf= and used in that same high-resolution format in the dissertation. Please note that using high-resolution images increases the file size of the compiled document. If you have an upper limit to your document size, be careful!
+
+\section{figures}
+
+Typically, images and tables are best typeset close to the text wherein they are referenced. I usually added \verb=[!h]= or \verb=[!htbp]= to the \verb=figure= environment for directing the float placement. Example of figure:
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.7\textwidth]{/HNA_CA_overview.pdf}
+\caption{Overview of chemical structure of \gls{hna} molecules. Left: Atom names and connectivity pattern of \gls{hna} molecules (C). (A) and (B) form the possible 6\pr-substituents: phosphate linker or terminal hydrogen, respectively. O4\pr\ either bonds directly with the next residue (E) or forms a terminal residue (D). Right: nomenclature of backbone and base orientation dihedrals (blue) and puckering dihedrals (red).}
+\label{fig:HNAoverview}
+\end{figure}
+
+\subsection{wrapped figures}
+
+I took the liberty of using typographical objects such as wrapped figures or wrapped tables as much as I liked. An example paragraph with a wrapped image:
+
+\begin{wrapfigure}[10]{i}{.5\textwidth}\centering
+\vspace{-\intextsep}
+\includegraphics[width=.5\textwidth]{/CentralDogma_clean.pdf}
+\caption{Illustration of the central dogma in biology. The concept of unidirectional transfer of information had to be re-examined after the discovery of reverse transcription (blue).}\label{intro:fig:centraldogma}	
+\end{wrapfigure}
+The early biochemical work of Kossel identified that \gls{dna} and \gls{rna} were composed using five different nitrogen bases, i.e. the nucleobases (\gls{adenine}, \gls{guanine}, \gls{cytosine}, \gls{thymine} and \gls{uracil}), a sugar and a phosphate.\autocite{Dahm2008} Based on subsequent structural biological work, it is now known that \gls{dna} and \gls{rna} are linear biopolymers and that each monomer, also known as a nucleotide, consists of three distinct fragments: the nucleobase, a sugar and a phosphate linking the different nucleotides together.
+
+\verb=\vspace= is added inside the \verb=wrapfigure= environment to improve visual alignment of the wrapped image with respect to the text.
+
+\section{tables}
+
+Tables use standard \verb=table= and \verb=tabular= environments paired with the \verb=booktabs= horizontal bars. I really liked the look of colored row, so I added \verb=\rowcolor= to highlight different rows or groups in rows. If you have difficulty getting the table just right, try the \verb=NiceTabular= environment instead of \verb=tabular=, e.g. a wrapped table at the start of a section (see below). Additionally for tables with notes under the table, I used the \verb=threeparttable= environment.
+Example of table:
+
+\begin{table}[htbp]\small\centering
+\caption{Comparison of structural differences between A-, B- and Z-type helices.\autocite{Sinden1994}}\label{intro:na:comphelices}	
+\begin{tabular}{l c c c c}
+\toprule
+	& A-type	& B-type		& \multicolumn{2}{c}{Z-type} \\ %TODO: Sinden Table 1-3
+		\cmidrule(lr){4-5}
+	&			&			&	Pyrimidine	&	Purines \\	
+
+\specialrule{\lightrulewidth}{2pt}{0pt}
+
+\rowcolor{Blue1!25}
+helix sense & right handed & right handed & \multicolumn{2}{c}{left handed} \\
+
+base pairs per turn & 11 & 10 & \multicolumn{2}{c}{12} \\
+
+\rowcolor{Blue1!25}
+rise per base pair (\si{\angstrom})& 2.55 &  3.4 & \multicolumn{2}{c}{3.7} \\
+
+rotation per base pair (\si{\degree}) & $+33$ & $+36$ & \multicolumn{2}{c}{$-30$} \\
+
+\rowcolor{Blue1!25}
+tilt per base pair (\si{\degree}) & 20 & $-6$ & \multicolumn{2}{c}{7} \\
+
+helical diameter (\si{\angstrom}) & 23 & 20 & \multicolumn{2}{c}{18} \\
+
+%major groove width (\si{\angstrom}) & & & & \\
+%minor groove width (\si{\angstrom}) & & & & \\
+
+\rowcolor{Blue1!25}
+sugar pucker & C3\pr-\textit{endo} & C2\pr-\textit{endo} & C2\pr-\textit{endo} & C3\pr-\textit{endo} \\
+
+$\chi$  & \textit{anti} & \textit{anti} & \textit{anti} & \textit{syn} \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+\newpage
+\subsection{wrapped tables}
+
+Similar to figures, I also used wrapped tables from time to time. Example of a paragraph with text wrapped around a table:
+
+\begin{wraptable}[16]{i}{.5\textwidth}
+\vspace{-2.5\intextsep}
+\centering\small
+\captionof{table}{List of dihedral angles in \protect\gls{dna}/\protect\gls{rna} and the atoms they are associated with}\label{intro:tab:dihedrals}
+\begin{NiceTabular}{l c }[colortbl-like]
+\toprule
+	&	Atoms \\
+
+\specialrule{\lightrulewidth}{2pt}{0pt}
+
+\rowcolor{Blue1!25}
+$\alpha$ & O3\pr($n-1$)--P($n-1$)--O5\pr($n$)--C5\pr($n$) \\
+\rowcolor{Blue1!25}
+$\beta$ & P($n-1$)--O5\pr($n$)--C5\pr($n$)--C4\pr($n$)\\
+\rowcolor{Blue1!25}
+$\gamma$ & O5\pr($n$)--C5\pr($n$)--C4\pr($n$)--C3\pr($n$) \\
+\rowcolor{Blue1!25}
+$\delta$ & C5\pr($n$)--C4\pr($n$)--C3\pr($n$)--O3\pr($n$)\\
+\rowcolor{Blue1!25}
+$\varepsilon$ & C4\pr($n$)--C3\pr($n$)--O3\pr($n$)--P($n+1$) \\
+\rowcolor{Blue1!25}
+$\zeta$ & C3\pr($n$)--O3\pr($n$)--P($n+1$)--O5\pr($n+1$) \\
+
+$\nu_0$ & C4\pr($n$)--O\pr($n$)--C1\pr($n$)--C2\pr($n$) \\
+$\nu_1$ & O\pr($n$)--C1\pr($n$)--C2\pr($n$)--C3\pr($n$) \\
+$\nu_2$ & C1\pr($n$)--C2\pr($n$)--C3\pr($n$)--C4\pr($n$) \\
+$\nu_3$ & C2\pr($n$)--C3\pr($n$)--C4\pr($n$)--O\pr($n$) \\
+$\nu_4$ & C3\pr($n$)--C4\pr($n$)--O\pr($n$)--C1\pr($n$) \\
+
+\rowcolor{Blue1!25}
+$\chi$\tabularnote{for purines} & O\pr($n$)--C1\pr($n$)--N9($n$)--C4($n$) \\
+\rowcolor{Blue1!25}
+$\chi$\tabularnote{for pyrimidines} & O\pr($n$)--C1\pr($n$)--N1($n$)--C2($n$) \\
+
+\specialrule{\heavyrulewidth}{0pt}{2pt}
+
+\end{NiceTabular}
+\end{wraptable}
+\paragraph{Glycosidic bond}
+The orientation of the nucleobase with respect to the sugar unit is described by the torsion angle $\chi$, which is the dihedral angle over the atoms O\pr--C1\pr--N9--C4 for purines or O\pr--C1\pr--N1--C2 for pyrimidines. Based on the value of $\chi$, conformations are typically divided in two categories: \textit{syn} and \textit{anti}. The \textit{anti} conformation orientates the nucleobase outward, i.e. the \gls{wcf} edge away from the sugar unit. Typical values for $\chi$ in the \textit{anti} conformation are \SI{180(90)}{\degree}. Conversely, the \textit{syn} conformation orientates the nucleobase inward, i.e. the \gls{wcf} edge towards the sugar unit. Typical values for $\chi$ in the \textit{syn} conformation are \SI{0(90)}{\degree}).
+
+\section{textboxes}
+I used 2 colored textboxes, where \verb=shadequote= is a custom configured environment in  \verb=memoir.config=.
+
+The first is used for highlighting quotes:
+
+\begin{shadequote}[r]{P. Dirac (1929)\autocite{Dirac1929}}
+The underlying physical laws necessary for the mathematical theory of a large part of physics and the whole of chemistry are thus completely known, and the difficulty is only that the exact application of these laws leads to equations much too complicated to be soluble.
+\end{shadequote}
+
+The second usage is a simple colored textbox used to highlight corresponding papers in each respective chapter:
+\begin{tcolorbox}[colback={shadecolor},outer arc=0mm,colframe={shadecolor}]
+This chapter is adapted from the following paper:\\
+CA Mattelaer, HP Mattelaer, J Rihon, M Froeyen, E Lescrinier ``Efficient and accurate potential energy surfaces of puckering in sugar-modified nucleosides'' \textit{J. Chem. Theory. Comput.}, \textbf{2021}, \textit{17}, 3814--3823, copyright 2021 American Chemical Society.
+\end{tcolorbox}
+
+
+\section{mathematics and other sciences packages}
+
+For equations and other maths, \verb=unicode-math= is employed. Units can be typeset via the \verb=siunitx= package. Chemistry is supported via \verb=mhchem= package. 

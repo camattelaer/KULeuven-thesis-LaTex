@@ -1,0 +1,19 @@
+\chapter{Document structure} \label{intro:chap}
+
+\section{This is a section}
+
+\subsection{This is a subsection} 
+
+\subsubsection{this is a subsubsection}
+
+Here you can see all used layers of titles. I decided to remove numbering starting from \verb=\subsubsection= and use a symbol. \verb=paragraph= is also not numbered and the body follows inline. I personally advise not to use numbered structures too much to prevent numbers like 1.1.1.1.1 which for me just feels unreadable. 
+
+All formatting of all section titles is found in the \verb=memoir.config= file and can be adjusted to your taste.
+
+\section{References}
+
+Each chapter is required to have a list of references. This is accomplished using the \verb=refsection= environment. Each \verb=refsection= environment can use its own \verb=.bib= file.
+
+\section{additional configuration}
+
+For other content, e.g. floats and references, the packages can also be found in \verb=memoir.config=. If you need extra advice on how to use or configure them, please look in their respective documentation online. If you can't find a solution, you can always reach out but depending on the impact of your request i might or might not be able to help.

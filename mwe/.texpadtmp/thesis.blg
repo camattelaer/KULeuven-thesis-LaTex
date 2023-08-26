@@ -1,0 +1,37 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/.texpadtmp/thesis.blg'
+[56] biber-darwin:340> INFO - === Sat Aug 26, 2023, 17:22:45
+[67] Biber.pm:415> INFO - Reading '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/.texpadtmp/thesis.bcf'
+[133] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[133] Biber.pm:952> INFO - Found 3 citekeys in bib section 1
+[133] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[134] Biber.pm:949> INFO - Using all citekeys in bib section 2
+[134] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[134] Biber.pm:952> INFO - Found 1 citekeys in bib section 3
+[134] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[158] Biber.pm:4340> INFO - Processing section 1
+[166] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/bib1.bib' for section 1
+[167] bibtex.pm:1689> INFO - LaTeX decoding ...
+[171] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/bib1.bib'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[206] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[207] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[208] Biber.pm:4340> INFO - Processing section 2
+[209] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/MyCollection.bib' for section 2
+[210] bibtex.pm:1689> INFO - LaTeX decoding ...
+[220] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/MyCollection.bib'
+[243] Utils.pm:395> WARN - legacy year field 'in preparation' in entry 'Rihon2023' is not an integer - this will probably not sort properly.
+[304] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[305] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[305] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[305] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[312] Biber.pm:4340> INFO - Processing section 3
+[313] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/MyCollection.bib' for section 3
+[325] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[325] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[325] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[325] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[326] bbl.pm:654> INFO - Writing '/Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/.texpadtmp/thesis.bbl' with encoding 'UTF-8'
+[335] bbl.pm:757> INFO - Output to /Users/camattelaer/Github/KULeuven-thesis-LaTex/mwe/.texpadtmp/thesis.bbl
+[335] Biber.pm:128> INFO - WARNINGS: 1
